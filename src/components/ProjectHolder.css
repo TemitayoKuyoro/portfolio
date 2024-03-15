@@ -1,0 +1,33 @@
+.project-box {
+    position: relative;
+}
+
+.project-header {
+    text-align: left;
+    letter-spacing: 0.01em;
+}
+
+.project-holder {
+    width: 64rem;
+    height: 24rem;
+    border-radius: 1em;
+    background-size: contain;
+}
+
+.project-selector {
+    width: 6rem;
+    height: 6rem;
+    background: white;
+    border-radius: 1000vh;
+    position: absolute;
+    right: 0;
+    bottom: 33%;
+    padding-block: 0;
+    padding-inline: 0;
+    margin: 0;
+}
+
+.project-selector_icon{
+    display: flex;
+    place-content: center;
+}
