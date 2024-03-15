@@ -15,7 +15,7 @@ function App() {
         {projects.map((proj) => <ProjectHolder key={proj.projectAddress} projectAddress={proj.projectAddress} projectImage={proj.projectImage} />)}
         <button className='project-selector'>
           <div className='project-selector_icon'>
-            <img className="project-icon" src="src/images/chevron-right.svg" width={80} height='auto' />
+            <img className="project-icon" src="/chevron-right.svg" width={80} height='auto' />
           </div>
         </button>
       </div>
