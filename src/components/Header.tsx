@@ -1,19 +1,22 @@
 import './Header.css'
-
-const profDiv = document.querySelector('.header-image')
-const profImg = profDiv?.querySelector('img')
-
-console.log(profDiv,profImg);
-
-function showImage () {
-    profDiv?.classList.add('loaded')
-}
-
-if (profImg?.complete) showImage();
-
-profImg?.addEventListener('load', showImage);
+import { useEffect } from 'react';
 
 function Header() {
+    useEffect(() => {
+        const profDiv = document.querySelector('.header-image');
+        const profImg = profDiv?.querySelector('img');
+    
+        console.log(profDiv, profImg);
+    
+        function showImage() {
+            profDiv?.classList.add('loaded')
+        }
+    
+        if (profImg?.complete) showImage();
+    
+        profImg?.addEventListener('load', showImage);
+    }, [])
+
     return (
         <div className='header'>
             <div className='header-image'>

@@ -40,6 +40,7 @@
     box-shadow: inset 0.5px 0.5px 8px 2px rgba(45, 47, 49, 0.1);
     display: flex;
     place-content: center;
+    align-items: center;
 }
 
 .project-selector:hover {

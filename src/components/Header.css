@@ -23,9 +23,9 @@
     transition: opacity 200ms ease-in-out;
 }
 
-.header-image.loaded {
+/* .header-image.loaded {
     opacity: 0;
-}
+} */
 
 .header-image.loaded img {
     opacity: 1;
