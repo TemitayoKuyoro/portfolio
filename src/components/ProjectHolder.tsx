@@ -8,7 +8,7 @@ function ProjectHolder({
     projectImage: string
 }) {
     return (
-        <a href={projectAddress}><div className="project-holder" style={{
+        <a href={projectAddress}><div className='project-display' style={{
             backgroundImage: projectImage,
         }} /></a>
 
