@@ -5,24 +5,43 @@
 
 .header-image {
     display: inline-block;
-    width: 100px;
-    height: 100px;
-    border: 1px solid white;
+    width: 60px;
+    height: 60px;
+    margin-right: 1.5rem;
     border-radius: 1000vh;
-    margin-right: 2rem;
-    background-image: url('../images/tk.jpg');
-    background-position: center center;
-    background-size:contain
+    border: 1px solid #888;
+    background-image: url('./tk-small.jpg');
+    background-size: cover;
+    background-position: center;
 }
+
+.header-image img {
+    border-radius: 1000vh;
+    opacity: 0;
+    object-position: center;
+    object-fit: cover;
+    transition: opacity 200ms ease-in-out;
+}
+
+.header-image.loaded {
+    opacity: 0;
+}
+
+.header-image.loaded img {
+    opacity: 1;
+}
+
 .hero-text {
     text-align: left;
-    font-size: 5.6rem;
+    font-size: 3.6rem;
     font-weight: 400;
     letter-spacing: -0.03em;
+    line-height: 0.9em;
 }
 
 .header-text {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
-    letter-spacing: -0.01em;
+    /* letter-spacing: -0.01em; */
 }
+
